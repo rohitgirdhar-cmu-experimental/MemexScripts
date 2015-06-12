@@ -32,6 +32,8 @@ class a_POST_handler:
               port_num = 8891
             elif request_handler.path == '/segment':
               port_num = 8890
+            elif request_handler.path == '/IST_fullImg':
+              port_num = 8892
             resp = self.getResponse(text, port_num)
   
             self.sendResponse(resp,request_handler)
