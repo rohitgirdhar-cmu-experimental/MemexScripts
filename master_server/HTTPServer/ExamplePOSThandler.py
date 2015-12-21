@@ -38,6 +38,15 @@ class a_POST_handler:
               port_num = 8893
             elif request_handler.path == '/IST_fullImg_ITQ':
               port_num = 8894
+            elif request_handler.path == '/IST_bgImg_ITQ':
+              port_num = 8895
+            elif request_handler.path == '/ATF_bgImg_ITQ':
+              port_num = 8896
+            elif request_handler.path == '/JPLWeapons2_bgImg':
+              port_num = 8897
+            elif request_handler.path == '/JPLWeapons2_fullImg':
+              port_num = 8898
+
             resp = self.getResponse(text, port_num)
   
             self.sendResponse(resp,request_handler)
