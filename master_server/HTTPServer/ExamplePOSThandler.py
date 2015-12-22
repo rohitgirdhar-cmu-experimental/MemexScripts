@@ -46,6 +46,8 @@ class a_POST_handler:
               port_num = 8897
             elif request_handler.path == '/JPLWeapons2_fullImg':
               port_num = 8898
+            elif request_handler.path == '/JPLWeapons2_fgImg':
+              port_num = 8899
 
             resp = self.getResponse(text, port_num)
   
